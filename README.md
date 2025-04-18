@@ -13,7 +13,7 @@
 
 ## 👨‍💻 About Me
 
-I’m **Aditya N. Khatawkar**, currently pursuing a degree in **Computer Science and Engineering** at **KLE Technological University, Hubballi**. Passionate about **learning**, **exploring new things**, and **pushing my boundaries**, I’m currently diving deep into **Backend Web Development** and **Data Structures & Algorithms (DSA)** — just trying to live by the quote:  
+I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science and Engineering at KLE Technological University, Hubballi. Passionate about learning, exploring new things, and pushing my boundaries, I’m currently diving deep into **Backend Web Development** and **Data Structures & Algorithms (DSA)** — just trying to live by the quote:  
 *"Do what you love, and you'll find people who love what you do"* 😄.
 
 
