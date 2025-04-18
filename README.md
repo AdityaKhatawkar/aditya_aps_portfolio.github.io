@@ -53,3 +53,9 @@ Managing the vast number of comments on YouTube videos requires intelligent syst
 ### 2. YouTube Copyright Infringement Detection
 
 With millions of videos uploaded daily, YouTube faces the challenge of identifying copyrighted content in real-time. This business case focuses on how data structures, pattern matching, and scalable backend systems can help detect and handle copyright violations efficiently.
+
+### 3. Cost-Optimized Resource Allocation in Google Cloud billing
+
+Google Cloud dynamically allocates resources based on cost and performance constraints. This problem can be modeled using **DP (Knapsack-like problems)** where the goal is to maximize resource usage within a cost or performance budget.
+
+
