@@ -1,0 +1,19 @@
+title: CodeNexus 
+description: Connecting ideas to solutions, one problem at a time!
+theme: null
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+author:
+  name: "Aditya N. Khatawkar"
+  email: "adityakhatawkar2@gmail.com"
+  
+minimal_mistakes_skin: air
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+highlighter: rouge
