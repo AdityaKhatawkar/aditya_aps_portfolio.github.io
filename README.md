@@ -5,8 +5,8 @@ permalink: /
 ---
 
 > *Connecting ideas to solutions, one problem at a time!*
-> 
-<a name="student-details"></a> 
+
+<a name="details"></a> 
 ## 📋 Student & Course Details
 - 👤 **Name:** Aditya N. Khatawkar  
 - 🆔 **SRN:** 01FE22BCS323  
@@ -17,7 +17,7 @@ permalink: /
 
   ---
 
-<a name="about-me"></a>
+<a name="about"></a>
 ## 👨‍💻 About Me
 I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science and Engineering at KLE Technological University, Hubballi. Passionate about learning, exploring new things, and pushing my boundaries, I’m currently diving deep into **Backend Web Development** and **Data Structures & Algorithms (DSA)** — just trying to live by the quote:  
 *"Do what you love, and you'll find people who love what you do"* 😄.
@@ -49,7 +49,7 @@ From real-time content delivery to intelligent recommendation engines, Google's 
 
 ---
 
-<a name="business-cases"></a>
+<a name="cases"></a>
 ## 💼 Business Cases
 ### 1. YouTube Video Comments Management
 
