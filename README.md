@@ -7,7 +7,7 @@ permalink: /
 > *Connecting ideas to solutions, one problem at a time!*
 
 ## 📋 Student & Course Details
-
+<a name="student-details"></a> 
 - 👤 **Name:** Aditya N. Khatawkar  
 - 🆔 **SRN:** 01FE22BCS323  
 - 📖 **Course Name:** Algorithmic Problem Solving   
@@ -18,7 +18,7 @@ permalink: /
   ---
 
 ## 👨‍💻 About Me
-
+<a name="about-me"></a>
 I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science and Engineering at KLE Technological University, Hubballi. Passionate about learning, exploring new things, and pushing my boundaries, I’m currently diving deep into **Backend Web Development** and **Data Structures & Algorithms (DSA)** — just trying to live by the quote:  
 *"Do what you love, and you'll find people who love what you do"* 😄.
 
@@ -35,7 +35,7 @@ I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science a
 
 
 ## Introduction
-
+<a name="introduction"></a>
 ![Google Logo](/assets/images/google-icon.png)
 
 Google LLC is a global technology powerhouse, best known for its flagship product - the Google Search engine. But its reach extends far beyond that. With services like **Gmail, Google Maps, YouTube, Google Drive, Google Cloud, Android**, and more, Google has built an entire ecosystem that impacts billions of users across the globe.
@@ -52,7 +52,7 @@ From real-time content delivery to intelligent recommendation engines, Google's 
 
 
 ## 💼 Business Cases
-
+<a name="business-cases"></a>
 ### 1. YouTube Video Comments Management
 
 Managing the vast number of comments on YouTube videos requires intelligent systems to filter spam, detect toxicity, and highlight meaningful interactions. This business case explores how backend systems and algorithms can improve user engagement and maintain community standards.
