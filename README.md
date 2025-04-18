@@ -27,7 +27,7 @@ I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science a
 ### 🛠️ Technical Skills
 
 - **Programming Languages:** Python, C, C++
-- **Web Development:** HTML, CSS, JavaScript, Node.js  
+- **Web Development:** HTML, CSS, JavaScript, Node.js, Express.js, Postman  
 - **Databases:** MySQL, MongoDB  
 - **Version Control:** Git, GitHub  
 
