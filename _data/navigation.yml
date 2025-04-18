@@ -5,7 +5,8 @@ main:
     url: "#student-details"
   - title: "About Me"
     url: "#about-me"
+  - title: "Introduction"
+    url: "#introduction"
   - title: "Business Cases"
     url: "#business-cases"
-  - title: "Contact"
-    url: "#contact"
+
