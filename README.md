@@ -1,3 +1,9 @@
+---
+layout: single
+title: "Home"
+permalink: /
+---
+
 > *Connecting ideas to solutions, one problem at a time!*
 
 ## 📋 Student & Course Details
