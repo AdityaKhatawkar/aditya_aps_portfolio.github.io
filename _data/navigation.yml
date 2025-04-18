@@ -1,0 +1,11 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "Student & Course Details"
+    url: "#student-details"
+  - title: "About Me"
+    url: "#about-me"
+  - title: "Business Cases"
+    url: "#business-cases"
+  - title: "Contact"
+    url: "#contact"
