@@ -45,17 +45,17 @@ This portfolio explores YouTube’s real-world business cases and demonstrates h
 
 
 ### 🏗️ YouTube System Architecture Overview
-Having spent hours surfing YouTube every day, I’ve often found myself wondering:
-
-- *“How does all of this actually work?”*
-- *“How are videos fetched so efficiently?”*
-- *“How is such a large amount of content, creator, and viewer data stored?”*
-- *“Don’t the servers get overloaded with requests—how is that managed?”*
-- *“How are video bitrates adapted?”*
-- *“How does the video recommendation work?”*
-- *“How is content violating DMCA detected?”*
-
-These and other similar questions always seem to loom in my mind.  
+<div style="background-color: #f5f5f5; border-left: 4px solid #007BFF; padding: 12px; margin-bottom: 1em;">
+  Having spent hours surfing YouTube every day, I’ve often found myself wondering:<br><br>
+  <em>“How does all of this actually work?”</em><br>
+  <em>“How are videos fetched so efficiently?”</em><br>
+  <em>“How is such a large amount of content, creator, and viewer data stored?”</em><br>
+  <em>“Don’t the servers get overloaded with requests—how is that managed?”</em><br>
+  <em>“How are video bitrates adapted?”</em><br>
+  <em>“How does the video recommendation work?”</em><br>
+  <em>“How is content violating DMCA detected?”</em><br><br>
+  These and other similar questions always seem to loom in my mind.
+</div>
 
  
 
