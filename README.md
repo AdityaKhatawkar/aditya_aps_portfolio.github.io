@@ -89,18 +89,21 @@ This end-to-end pipeline built on load balancers, distributed storage, transcodi
 
 <a name="cases"></a>
 ## 💼 Business Cases
+
 ### 1. YouTube Video Comments Management
 
-Managing the vast number of comments on YouTube videos requires intelligent systems to filter spam, detect toxicity, and highlight meaningful interactions. This business case explores how backend systems and algorithms can improve user engagement and maintain community standards.
+Managing the vast number of comments on YouTube videos requires intelligent systems to filter spam, detect toxicity, and highlight meaningful interactions. This business case explores how backend systems and algorithms can improve user engagement and maintain community standards.  
+<a href="/cases/comments-management/" class="button">More ▶️</a>
 
 ### 2. YouTube Copyright Infringement Detection
 
-With millions of videos uploaded daily, YouTube faces the challenge of identifying copyrighted content in real-time. This business case focuses on how data structures, pattern matching, and scalable backend systems can help detect and handle copyright violations efficiently.
+With millions of videos uploaded daily, YouTube faces the challenge of identifying copyrighted content in real time. This business case focuses on how data structures, pattern matching, and scalable backend systems can help detect and handle copyright violations efficiently.  
+<a href="/cases/copyright-infringement/" class="button">More ▶️</a>
 
-### 3. Cost-Optimized Resource Allocation in Google Cloud billing
+### 3. Cost-Optimized Resource Allocation
 
-Google Cloud dynamically allocates resources based on cost and performance constraints. This problem can be modeled using **DP (Knapsack-like problems)** where the goal is to maximize resource usage within a cost or performance budget.
-
+Google Cloud dynamically allocates resources based on cost and performance constraints. This problem can be modeled using **DP (Knapsack-like problems)** where the goal is to maximize resource usage within a cost or performance budget.  
+<a href="/cases/resource-allocation/" class="button">More ▶️</a>
 
 ---
 
