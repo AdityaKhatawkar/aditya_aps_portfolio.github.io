@@ -42,6 +42,50 @@ What makes YouTube unique is not just its scale, but the way it handles business
 
 This portfolio explores YouTube’s real-world business cases and demonstrates how core DSA techniques can be applied to model and solve them efficiently.
 
+## 🧩 The YouTube Ecosystem
+
+To serve a wide range of audiences and monetize effectively, YouTube has developed a diverse product ecosystem — each with its own algorithms, data pipelines, and engineering challenges:
+
+### 🎵 YouTube Music
+A music streaming platform offering official tracks, remixes, live performances, and personalized playlists. Competes with Spotify and Apple Music.  
+**DSA Applications:** Collaborative filtering, genre-based clustering, k-nearest neighbors (KNN).
+
+---
+
+### 📺 YouTube TV
+A live TV streaming service offering 100+ channels, DVR support, and real-time sports broadcasting.  
+**DSA Applications:** Real-time content scheduling, load balancing, greedy allocation, network optimization.
+
+---
+
+### 🧒 YouTube Kids
+A child-friendly version of YouTube with strict content filters and parental controls.  
+**DSA Applications:** Content classification algorithms, string matching (KMP/Aho-Corasick), moderation systems.
+
+---
+
+### ✂️ YouTube Shorts
+A short-form vertical video format with content under 60 seconds, designed to compete with TikTok and Reels.  
+**DSA Applications:** Watch-time analysis, heap-based ranking, sliding window algorithms, real-time trend detection.
+
+---
+
+### 💼 YouTube Premium
+A subscription service offering ad-free viewing, offline downloads, and background play.  
+**DSA Applications:** Offline video compression (greedy, Huffman coding), content caching, user preference modeling using dynamic programming.
+
+---
+
+### 🎮 YouTube Gaming
+Focused on live game streams, walkthroughs, and esports content. Now merged into the main YouTube app.  
+**DSA Applications:** Real-time stream optimization, chat moderation (Bloom filters), low-latency delivery using queue-based models.
+
+---
+
+Each product introduces unique algorithmic problems, and collectively, they form a rich environment for solving real-world business cases using core DSA techniques.
+
+
+
 
 ---
 
