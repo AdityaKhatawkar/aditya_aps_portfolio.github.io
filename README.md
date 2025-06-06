@@ -45,7 +45,7 @@ This portfolio explores YouTube’s real-world business cases and demonstrates h
 
 
 ### 🏗️ YouTube System Architecture Overview
-Having spent hours surfing YouTube every day, I’ve often found myself wondering:<br><br>
+Having spent hours surfing YouTube every day, I’ve often found myself wondering:
 <div style="background-color: #f5f5f5; border-left: 4px solid #007BFF; padding: 12px; margin-bottom: 1em;">
   <em>“How does all of this actually work?”</em><br>
   <em>“How are videos fetched so efficiently?”</em><br>
