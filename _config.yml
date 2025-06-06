@@ -9,11 +9,6 @@ author:
   
 minimal_mistakes_skin: air
 
-collections:
-  business_cases:
-    output: true
-    permalink: /cases/:name/
-
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
