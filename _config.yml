@@ -17,3 +17,8 @@ plugins:
 
 markdown: kramdown
 highlighter: rouge
+
+collections:
+  business_cases:
+    output: true
+    permalink: /cases/:name/
