@@ -63,10 +63,16 @@ Google Cloud dynamically allocates resources based on cost and performance const
 ---
 
 <a name="references"></a>
-## References
-[1] Statista - "Most popular social networks worldwide as of February 2025, by number of monthly active users". https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/
-[2] Grin - "The Rise of YouTube Shorts". https://grin.co/blog/youtube-shorts-in-influencer-marketing/
-[3] Forrester - "Meta’s Short-Form Video Strategy Isn’t Reeling In Market Share". https://www.forrester.com/blogs/metas-short-form-video-strategy-isnt-reeling-in-market-share/
+### References
+
+1. Statista. *Most popular social networks worldwide as of February 2025, by number of monthly active users*.  
+   Available at: [https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/](https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/)
+
+2. Grin. *The Rise of YouTube Shorts*.  
+   Available at: [https://grin.co/blog/youtube-shorts-in-influencer-marketing/](https://grin.co/blog/youtube-shorts-in-influencer-marketing/)
+
+3. Forrester. *Meta’s Short-Form Video Strategy Isn’t Reeling In Market Share*.  
+   Available at: [https://www.forrester.com/blogs/metas-short-form-video-strategy-isnt-reeling-in-market-share/](https://www.forrester.com/blogs/metas-short-form-video-strategy-isnt-reeling-in-market-share/)
 
 
 
