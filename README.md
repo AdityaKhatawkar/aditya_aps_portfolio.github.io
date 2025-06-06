@@ -93,7 +93,7 @@ This end-to-end pipeline built on load balancers, distributed storage, transcodi
 ### 1. YouTube Video Comments Management
 
 Managing the vast number of comments on YouTube videos requires intelligent systems to filter spam, detect toxicity, and highlight meaningful interactions. This business case explores how backend systems and algorithms can improve user engagement and maintain community standards.  
-1. [**More▶️**](./01.md)
+[**More▶️**](./01.md)
 
 ### 2. YouTube Copyright Infringement Detection
 
