@@ -42,50 +42,41 @@ What makes YouTube unique is not just its scale, but the way it handles business
 
 This portfolio explores YouTube’s real-world business cases and demonstrates how core DSA techniques can be applied to model and solve them efficiently.
 
-## 🧩 The YouTube Ecosystem
 
-To serve a wide range of audiences and monetize effectively, YouTube has developed a diverse product ecosystem — each with its own algorithms, data pipelines, and engineering challenges:
 
-### 🎵 YouTube Music
-A music streaming platform offering official tracks, remixes, live performances, and personalized playlists. Competes with Spotify and Apple Music.  
-**DSA Applications:** Collaborative filtering, genre-based clustering, k-nearest neighbors (KNN).
+### 🏗️ YouTube System Architecture Overview
+Having spent hours surfing YouTube every day, I’ve often found myself wondering, “How does all of this actually work?”, “How are videos fetched so efficiently?”, “How is such a large amount of content, creator, and viewer data stored?”, “Don’t the servers get overloaded with requests—how is that managed?”, “How are video bitrates adapted?”, "How does the video recommendation work?", "How is content violating DMCA detected?", and other similar questions always seem to loom in my mind.  
 
----
+Below is a concise overview of how YouTube’s core systems handle video from upload through delivery. This high-level architecture lays the groundwork for the business cases we’ll explore next.
 
-### 📺 YouTube TV
-A live TV streaming service offering 100+ channels, DVR support, and real-time sports broadcasting.  
-**DSA Applications:** Real-time content scheduling, load balancing, greedy allocation, network optimization.
+![YouTube System Design Architecture](/assets/images/youtube_system_design.png)
 
----
+*Figure 1: High-level YouTube system design illustrating user upload servers, transcoding clusters, video storage, CDNs, metadata services, and recommendation pipelines.* [4]
 
-### 🧒 YouTube Kids
-A child-friendly version of YouTube with strict content filters and parental controls.  
-**DSA Applications:** Content classification algorithms, string matching (KMP/Aho-Corasick), moderation systems.
+1. **User Client → Upload Servers**  
+   - **Creators** upload raw video files via web or mobile clients.  
+   - Requests pass through a **load balancer** to an **Upload/Web Server**, which writes the file into durable blob storage.
 
----
+2. **Transcoding & Storage**  
+   - A fleet of **Transcoding Servers** retrieves uploads and encodes them into multiple resolutions (144p, 480p, 1080p, etc.).  
+   - Transcoded segments are stored in a distributed **Video Storage** layer; metadata (titles, IDs, thumbnails) is indexed in a **Metadata Store** (e.g., Bigtable, Spanner).
 
-### ✂️ YouTube Shorts
-A short-form vertical video format with content under 60 seconds, designed to compete with TikTok and Reels.  
-**DSA Applications:** Watch-time analysis, heap-based ranking, sliding window algorithms, real-time trend detection.
+3. **Content Delivery Network (CDN)**  
+   - Popular and newly uploaded content is replicated to edge **CDN** nodes worldwide.  
+   - Viewers fetch video chunks from the nearest CDN via adaptive-bitrate protocols (MPEG-DASH, HLS) to minimize latency.
 
----
+4. **Viewer Playback Path**  
+   - A **Viewer** requests a video; the client contacts the closest CDN edge.  
+   - Cache misses trigger a fetch from the origin storage.  
+   - **Adaptive streaming algorithms** and **real-time analytics** determine the optimal segment quality.
 
-### 💼 YouTube Premium
-A subscription service offering ad-free viewing, offline downloads, and background play.  
-**DSA Applications:** Offline video compression (greedy, Huffman coding), content caching, user preference modeling using dynamic programming.
-
----
-
-### 🎮 YouTube Gaming
-Focused on live game streams, walkthroughs, and esports content. Now merged into the main YouTube app.  
-**DSA Applications:** Real-time stream optimization, chat moderation (Bloom filters), low-latency delivery using queue-based models.
+5. **Metadata & Recommendations**  
+   - Meanwhile, the client’s API calls hit the **API Server**, which queries the **Metadata Store** for user history and video stats.  
+   - **Recommendation engines** (graph-based, collaborative filtering) generate personalized “Up Next” and homepage feeds.
 
 ---
 
-Each product introduces unique algorithmic problems, and collectively, they form a rich environment for solving real-world business cases using core DSA techniques.
-
-
-
+This end-to-end pipeline—built on load balancers, distributed storage, transcoding clusters, CDNs, and recommendation services—forms the foundation for all the business-critical scenarios in this portfolio. In the sections that follow, we’ll dive into specific cases and show how Data Structures & Algorithms (DSA) techniques solve them efficiently.
 
 ---
 
