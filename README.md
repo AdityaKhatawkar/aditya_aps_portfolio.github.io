@@ -18,7 +18,7 @@ permalink: /
 
 <a name="about"></a>
 ## 👨‍💻 About Me
-I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science and Engineering at KLE Technological University, Hubballi. Passionate about learning, exploring new things, and pushing my boundaries, I’m currently diving deep into **Backend Web Development** and **Data Structures & Algorithms (DSA)** — just trying to live by the quote:  
+I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science and Engineering at KLE Technological University, Hubballi. Passionate about learning, exploring new things, and pushing my boundaries, I’m currently diving deep into **Backend Web Development** and **Data Structures & Algorithms (DSA)**, just trying to live by the quote:  
 *"Do what you love, and you'll find people who love what you do"* .
 
 
@@ -36,7 +36,7 @@ I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science a
 ## Introduction
 ![Google Logo](/assets/images/youtube_logo.png)
 
-Founded in 2005 and acquired by Google in 2006, YouTube has evolved from a simple video-sharing site into a massive, data-driven platform that powers content discovery, creator monetization, and user engagement at a global scale. With over 2.7 billion monthly active users and more than 500 hours of video uploaded every minute, YouTube operates at an unmatched scale, requiring advanced algorithmic intelligence to manage and optimize operations [1]. In recent years, YouTube has witnessed a massive boom in short-form content with the launch of YouTube Shorts, a feature introduced to compete with TikTok and Instagram Reels. By 2024, YouTube Shorts had surpassed 70 billion daily views globally [2]. Forrester Research reports that 29% of U.S. Gen Z online adults now use YouTube Shorts at least weekly—underscoring how bite-sized video is reshaping attention spans and engagement patterns [3].
+Founded in 2005 and acquired by Google in 2006, YouTube has evolved from a simple video-sharing site into a massive, data-driven platform that powers content discovery, creator monetization, and user engagement at a global scale. With over 2.7 billion monthly active users and more than 500 hours of video uploaded every minute, YouTube operates at an unmatched scale, requiring advanced algorithmic intelligence to manage and optimize operations [1]. In recent years, YouTube has witnessed a massive boom in short-form content with the launch of YouTube Shorts, a feature introduced to compete with TikTok and Instagram Reels. By 2024, YouTube Shorts had surpassed 70 billion daily views globally [2]. Forrester Research reports that 29% of U.S. Gen Z online adults now use YouTube Shorts at least weekly underscoring how bite-sized video is reshaping attention spans and engagement patterns [3].
 
 What makes YouTube unique is not just its scale, but the way it handles business-critical challenges such as, content recommendation, ad targeting, trend detection, and moderation, usingis deeply rooted a backbone of data structures and algorithms (DSA). Whether it's ranking the best video for a user, optimizing live video delivery, or filtering spam, YouTube’s success  in algorithmic problem-solving.
 
@@ -49,7 +49,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 ><em>“How does all of this actually work?”</em><br>
 ><em>“How are videos fetched so efficiently?”</em><br>
 ><em>“How is such a large amount of content, creator, and viewer data stored?”</em><br>
-><em>“Don’t the servers get overloaded with requests—how is that managed?”</em><br>
+><em>“Don’t the servers get overloaded with requests? how is that managed?”</em><br>
 ><em>“How are video bitrates adapted?”</em><br>
 ><em>“How does the video recommendation work?”</em><br>
 ><em>“How is content violating DMCA detected?”</em><br>
@@ -83,7 +83,7 @@ Below is a concise overview of how YouTube’s core systems handle video from up
 
 ---
 
-This end-to-end pipeline—built on load balancers, distributed storage, transcoding clusters, CDNs, and recommendation services—forms the foundation for all the business-critical scenarios in this portfolio. In the sections that follow, we’ll dive into specific cases and show how Data Structures & Algorithms (DSA) techniques solve them efficiently.
+This end-to-end pipeline built on load balancers, distributed storage, transcoding clusters, CDNs, and recommendation services forms the foundation for all the business-critical scenarios in this portfolio. In the sections that follow, we’ll dive into specific cases and show how Data Structures & Algorithms (DSA) techniques solve them efficiently.
 
 ---
 
