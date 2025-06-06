@@ -45,7 +45,8 @@ This portfolio explores YouTube’s real-world business cases and demonstrates h
 
 
 ### 🏗️ YouTube System Architecture Overview
-Having spent hours surfing YouTube every day, I’ve often found myself wondering, “How does all of this actually work?”, “How are videos fetched so efficiently?”, “How is such a large amount of content, creator, and viewer data stored?”, “Don’t the servers get overloaded with requests—how is that managed?”, “How are video bitrates adapted?”, "How does the video recommendation work?", "How is content violating DMCA detected?", and other similar questions always seem to loom in my mind.  
+Having spent hours surfing YouTube every day, I’ve often found myself wondering, *“How does all of this actually work?”*, *“How are videos fetched so efficiently?”*, *“How is such a large amount of content, creator, and viewer data stored?”*, *“Don’t the servers get overloaded with requests—how is that managed?”*, *“How are video bitrates adapted?”*, *“How does the video recommendation work?”*, *“How is content violating DMCA detected?”*, and other similar questions always seem to loom in my mind.
+ 
 
 Below is a concise overview of how YouTube’s core systems handle video from upload through delivery. This high-level architecture lays the groundwork for the business cases we’ll explore next.
 
@@ -108,6 +109,9 @@ Google Cloud dynamically allocates resources based on cost and performance const
 
 3. Forrester. *Meta’s Short-Form Video Strategy Isn’t Reeling In Market Share*.  
    Available at: [https://www.forrester.com/blogs/metas-short-form-video-strategy-isnt-reeling-in-market-share/](https://www.forrester.com/blogs/metas-short-form-video-strategy-isnt-reeling-in-market-share/)
+
+4. GeeksforGeeks. *System Design of Youtube - A Complete Architecture*.
+   Available at: [https://www.geeksforgeeks.org/system-design-of-youtube-a-complete-architecture/](https://www.geeksforgeeks.org/system-design-of-youtube-a-complete-architecture/)
 
 
 
