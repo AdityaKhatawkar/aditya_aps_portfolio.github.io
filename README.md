@@ -187,7 +187,7 @@ To detect peak periods of a video’s popularity, YouTube analyzes the time wind
 
 #### 10. Video Recommendations  
 YouTube recommends videos based on a user’s watch history and similarities with others. Collaborative filtering identifies content that users with similar tastes liked.  
-**Design Technique / Algorithm:** Collaborative Filter  
+**Design Technique / Algorithm:** Collaborative Filtering  
 <a href="./10.html" class="button">More ▶️</a>
 
 #### 11. Ad Placement Scheduling  
@@ -255,7 +255,7 @@ When users mistype queries, YouTube corrects spelling and suggests the closest p
 
 #### 22. Real-Time Ad Auction  
 When an ad slot becomes available (e.g., before a video), YouTube must instantly select the winning ad from competing advertisers. Each advertiser places a bid based on targeting criteria, budget, and expected engagement.  
-**Design Technique / Algorithm:** Vickrey (second-price) auction + MVC architecture  
+**Design Technique / Algorithm:** Vickrey (Second-Price) Auction + MVC Architecture  
 <a href="./22.html" class="button">More ▶️</a>
 
 #### 23. Video Recommendation Ranking  
