@@ -138,7 +138,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 ### I. Ingestion & Storage
 
 #### 1. Optimal Video Upload Scheduling  
-<p class="justified">We split a creator’s large video into chunks and schedule parallel uploads to regional servers. A dynamic-programming planner weighs chunk sizes against server load and network delays—ensuring fast, balanced ingestion.</p>  
+<p class="justified">We split a creator’s large video into chunks and schedule parallel uploads to regional servers. A dynamic-programming planner weighs chunk sizes against server load and network delays ensuring fast, balanced ingestion.</p>  
 **Design Technique / Algorithm:** Dynamic Programming<br>  
 <a href="./01.html" class="button">More ▶️</a>
 
@@ -148,7 +148,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 <a href="./02.html" class="button">More ▶️</a>
 
 #### 3. Storage-Aware Server Assignment  
-<p class="justified">Approved video chunks are mapped to storage nodes via consistent hashing. This evenly distributes load and minimizes reshuffling when capacity changes—locking in a stable foundation for delivery and caching.</p>  
+<p class="justified">Approved video chunks are mapped to storage nodes via consistent hashing. This evenly distributes load and minimizes reshuffling when capacity changes, locking in a stable foundation for delivery and caching.</p>  
 **Design Technique / Algorithm:** Consistent Hashing<br>  
 <a href="./03.html" class="button">More ▶️</a>
 
@@ -162,7 +162,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 <a href="./04.html" class="button">More ▶️</a>
 
 #### 5. Shortest-Path Routing  
-<p class="justified">Once an edge is chosen, an A* search over our backbone graph computes the fastest network path—navigating around congestion or outages to maintain consistent throughput.</p>  
+<p class="justified">Once an edge is chosen, an A* search over our backbone graph computes the fastest network path, navigating around congestion or outages to maintain consistent throughput.</p>  
 **Design Technique / Algorithm:** A* Graph Search<br>  
 <a href="./05.html" class="button">More ▶️</a>
 
@@ -172,17 +172,17 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 <a href="./06.html" class="button">More ▶️</a>
 
 #### 7. Load Balancing  
-<p class="justified">To handle unpredictable demand, incoming streams are distributed across server pools in a Round-Robin fashion augmented with real-time health checks—preventing hot spots during viral peaks.</p>  
+<p class="justified">To handle unpredictable demand, incoming streams are distributed across server pools in a Round-Robin fashion augmented with real-time health checks preventing hot spots during viral peaks.</p>  
 **Design Technique / Algorithm:** Round Robin<br>  
 <a href="./07.html" class="button">More ▶️</a>
 
 #### 8. Adaptive Bitrate Delivery  
-<p class="justified">As playback begins, we break the video into quality-graded segments. A knapsack-style DP selects the highest bitrate that fits current bandwidth and buffer targets—dynamically swapping streams to avoid rebuffering.</p>  
+<p class="justified">As playback begins, we break the video into quality-graded segments. A knapsack-style DP selects the highest bitrate that fits current bandwidth and buffer targets dynamically swapping streams to avoid rebuffering.</p>  
 **Design Technique / Algorithm:** Dynamic Programming (Knapsack)<br>  
 <a href="./08.html" class="button">More ▶️</a>
 
 #### 9. CDN Caching & Eviction  
-<p class="justified">Popular content lives in edge caches. We run an LRU eviction policy so that only recent high-demand videos remain close to users—feeding back into future edge-selection decisions.</p>  
+<p class="justified">Popular content lives in edge caches. We run an LRU eviction policy so that only recent high-demand videos remain close to users feeding back into future edge-selection decisions.</p>  
 **Design Technique / Algorithm:** LRU Cache Policy<br>  
 <a href="./09.html" class="button">More ▶️</a>
 
@@ -196,17 +196,17 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 <a href="./10.html" class="button">More ▶️</a>
 
 #### 11. Trending Query Detection  
-<p class="justified">Mo’s algorithm scans sliding time windows over our search logs to spot surges in specific terms—fueling “hot” search suggestions and surfacing emerging interests.</p>  
+<p class="justified">Mo’s algorithm scans sliding time windows over our search logs to spot surges in specific terms, fueling “hot” search suggestions and surfacing emerging interests.</p>  
 **Design Technique / Algorithm:** Mo’s Algorithm<br>  
 <a href="./11.html" class="button">More ▶️</a>
 
 #### 12. Autocomplete Search Suggestions  
-<p class="justified">As users type, a Trie of historical queries delivers instant prefix matches—reducing keystrokes and guiding them toward popular searches.</p>  
+<p class="justified">As users type, a Trie of historical queries delivers instant prefix matches, reducing keystrokes and guiding them toward popular searches.</p>  
 **Design Technique / Algorithm:** Trie<br>  
 <a href="./12.html" class="button">More ▶️</a>
 
 #### 13. Search Spell Correction  
-<p class="justified">When users mistype, we combine Trie lookups with edit-distance calculations to suggest the closest valid queries—minimizing zero-result searches and keeping users on track.</p>  
+<p class="justified">When users mistype, we combine Trie lookups with edit-distance calculations to suggest the closest valid queries, minimizing zero-result searches and keeping users on track.</p>  
 **Design Technique / Algorithm:** Trie + Edit Distance<br>  
 <a href="./13.html" class="button">More ▶️</a>
 
@@ -225,7 +225,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 ### IV. Recommendation & Engagement
 
 #### 16. Collaborative Filtering  
-<p class="justified">For each user segment, we build a user–item matrix and apply matrix factorization to suggest videos that “peers” in their cluster enjoyed—lifting watch time and session depth.</p>  
+<p class="justified">For each user segment, we build a user–item matrix and apply matrix factorization to suggest videos that “peers” in their cluster enjoyed, lifting watch time and session depth.</p>  
 **Design Technique / Algorithm:** Collaborative Filtering<br>  
 <a href="./16.html" class="button">More ▶️</a>
 
@@ -235,12 +235,12 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 <a href="./17.html" class="button">More ▶️</a>
 
 #### 18. Common Category Detection  
-<p class="justified">To suggest relevant tags or playlists, we compute the least common ancestor in our category hierarchy via binary lifting—finding the most specific shared genre among related videos or channels.</p>  
+<p class="justified">To suggest relevant tags or playlists, we compute the least common ancestor in our category hierarchy via binary lifting, finding the most specific shared genre among related videos or channels.</p>  
 **Design Technique / Algorithm:** Binary Lifting for LCA<br>  
 <a href="./18.html" class="button">More ▶️</a>
 
 #### 19. Fair Playlist Shuffle  
-<p class="justified">Within any playlist, the Johnson–Trotter algorithm generates a full permutation sequence before repeating—guaranteeing each video appears once per cycle and avoiding unintended bias.</p>  
+<p class="justified">Within any playlist, the Johnson–Trotter algorithm generates a full permutation sequence before repeating, guaranteeing each video appears once per cycle and avoiding unintended bias.</p>  
 **Design Technique / Algorithm:** Johnson–Trotter Algorithm<br>  
 <a href="./19.html" class="button">More ▶️</a>
 
@@ -249,17 +249,17 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 ### V. Monetization & Optimization
 
 #### 20. Ad Placement Scheduling  
-<p class="justified">We model ad slots as edges in a flow network: Ford-Fulkerson max-flow finds the optimal allocation of ad segments across videos and user cohorts—balancing revenue with viewer experience.</p>  
+<p class="justified">We model ad slots as edges in a flow network: Ford-Fulkerson max-flow finds the optimal allocation of ad segments across videos and user cohorts, balancing revenue with viewer experience.</p>  
 **Design Technique / Algorithm:** Ford-Fulkerson Algorithm<br>  
 <a href="./20.html" class="button">More ▶️</a>
 
 #### 21. Real-Time Ad Auction  
-<p class="justified">For each slot, advertisers bid in a Vickrey (second-price) auction. Our microservices MVC pipeline adjudicates bids in parallel, picking the winner and charging the runner-up price—optimizing fairness and RPM.</p>  
+<p class="justified">For each slot, advertisers bid in a Vickrey (second-price) auction. Our MVC pipeline judges bids in parallel, picking the winner and charging the runner-up price, optimizing fairness and RPM.</p>  
 **Design Technique / Algorithm:** Vickrey Auction + MVC Architecture<br>  
 <a href="./21.html" class="button">More ▶️</a>
 
 #### 22. Dynamic Ad Sequencing  
-<p class="justified">For long-form content, dynamic programming schedules multiple ads—maximizing total revenue while capping insertions so as not to exceed viewer tolerance thresholds.</p>  
+<p class="justified">For long-form content, dynamic programming schedules multiple ads maximizing total revenue while capping insertions so as not to exceed viewer tolerance thresholds.</p>  
 **Design Technique / Algorithm:** Dynamic Programming<br>  
 <a href="./22.html" class="button">More ▶️</a>
 
