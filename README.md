@@ -258,6 +258,24 @@ When users mistype queries, YouTube corrects spelling and suggests the closest p
 **Design Technique / Algorithm:** Trie + Edit Distance  
 <a href="./21.html" class="button">More ▶️</a>  
 
+#### 22. Real-Time Ad Auction  
+When an ad slot becomes available (e.g., before a video), YouTube must instantly select the winning ad from competing advertisers. Each advertiser places a bid based on targeting criteria, budget, and expected engagement.
+
+**Design Technique / Algorithm:** Vickrey (second-price) auction + MVC arhitecture <br>
+<a href="./22.html" class="button">More ▶️</a> 
+
+#### 23. Video Recommendation Ranking  
+To prioritize which videos appear higher in the recommendation feed, YouTube models the video network as a graph where videos are nodes and edges represent user transitions. Using PageRank, the system ranks videos by importance based on how often users jump between them.
+
+**Design Technique / Algorithm:** PageRank <br>
+<a href="./23.html" class="button">More ▶️</a> 
+
+#### 24. Scheduling Video Ads 
+To determine the optimal sequence and timing for inserting ads into long-form videos (e.g., shows, livestreams), YouTube uses dynamic programming to maximize ad revenue while minimizing viewer disruption.
+
+**Design Technique / Algorithm:** Dynamic Programming<br>
+<a href="./24.html" class="button">More ▶️</a> 
+
 ---
 
 <a name="references"></a>
