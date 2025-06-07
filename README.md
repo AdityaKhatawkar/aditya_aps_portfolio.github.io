@@ -82,7 +82,9 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 
 ![YouTube System Design Architecture](/assets/images/youtube_system_design.png)
 
-*Figure 1: High-level YouTube system design illustrating user upload servers, transcoding clusters, video storage, CDNs, metadata services, and recommendation pipelines.* [4]
+<div class="justified" style="margin-top: 1em;">
+  <em>Figure 1: High-level YouTube system design illustrating user upload servers, transcoding clusters, video storage, CDNs, metadata services, and recommendation pipelines.</em> [4]
+</div>
 
 <div class="justified">
   <ol>
