@@ -133,17 +133,23 @@ YouTube’s backend must handle uploading, transcoding, storage, and streaming t
 
 #### 1. Content Delivery Network (CDN) Server Selection
 When serving a video stream, YouTube must select the nearest CDN edge server or region to minimize latency. Given a user’s geographic location, we want the closest server.
+
 **Algorithm:** KD-Tree Nearest-Neighbor Search
+
 <a href="./01.html" class="button">More ▶️</a>
 
 #### 2. Shortest-Path Routing in CDN Network
 Once YouTube selects a CDN edge region to serve the user, the system must determine how to route the request through the network to that destination with minimal latency.
+
 **Algorithm:** A* Graph Search
+
 <a href="./02.html" class="button">More ▶️</a>
 
 #### 3. Content Delivery Network (CDN) Optimization
 To ensure YouTube’s video content reaches users quickly and reliably, Google must optimize the underlying physical network that connects data centers, edge servers, and backbone links.
+
 **Algorithm:** Borůvka’s Algorithm for Minimum Spanning Tree (MST)
+
 <a href="./03.html" class="button">More ▶️</a>
 
 ---
