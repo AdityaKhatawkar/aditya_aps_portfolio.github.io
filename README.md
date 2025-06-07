@@ -132,204 +132,146 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 </div>
 
 <a name="cases"></a>
+<div style="text-align: justify;">
+
 ## 💼 Business Cases
+
 ### I. Content Delivery and Infrastructure
 
-<div class="justified">
-YouTube’s backend must handle uploading, transcoding, storage, and streaming to millions of devices. The key is fast retrieval and minimal latency. Services are replicated across regions, and popular content is pushed to edge servers (CDNs) [5]. Efficient algorithms are used for routing, load balancing, and data placement.
-</div>
-
-#### 1. Content Delivery Network (CDN) Server Selection
-<div class="justified">
-When serving a video stream, YouTube must select the nearest CDN edge server or region to minimize latency. Given a user’s geographic location, we want the closest server.
-</div>
-
+#### 1. Content Delivery Network (CDN) Server Selection  
+When serving a video stream, YouTube must select the nearest CDN edge server or region to minimize latency. Given a user’s geographic location, we want the closest server.  
 **Design Technique / Algorithm:** KD-Tree Nearest-Neighbor Search  
 <a href="./01.html" class="button">More ▶️</a>
 
-#### 2. Shortest-Path Routing in CDN Network
-<div class="justified">
-Once YouTube selects a CDN edge region to serve the user, the system must determine how to route the request through the network to that destination with minimal latency.
-</div>
-
+#### 2. Shortest-Path Routing in CDN Network  
+Once YouTube selects a CDN edge region to serve the user, the system must determine how to route the request through the network to that destination with minimal latency.  
 **Design Technique / Algorithm:** A* Graph Search  
 <a href="./02.html" class="button">More ▶️</a>
 
-#### 3. Optimal Video Upload Scheduling
-<div class="justified">
-When a creator uploads a large video, it is split into smaller chunks and sent to multiple regional upload servers (nearby CDNs) to reduce latency.
-</div>
-
+#### 3. Optimal Video Upload Scheduling  
+When a creator uploads a large video, it is split into smaller chunks and sent to multiple regional upload servers (nearby CDNs) to reduce latency.  
 **Design Technique / Algorithm:** Dynamic Programming  
 <a href="./03.html" class="button">More ▶️</a>
 
-#### 4. Content Delivery Network (CDN) Optimization
-<div class="justified">
-To ensure YouTube’s video content reaches users quickly and reliably, Google must optimize the underlying physical network that connects data centers, edge servers, and backbone links.
-</div>
-
+#### 4. Content Delivery Network (CDN) Optimization  
+To ensure YouTube’s video content reaches users quickly and reliably, Google must optimize the underlying physical network that connects data centers, edge servers, and backbone links.  
 **Design Technique / Algorithm:** Borůvka’s Algorithm for Minimum Spanning Tree (MST)  
 <a href="./04.html" class="button">More ▶️</a>
 
-#### 5. CDN Caching and Eviction
-<div class="justified">
-When millions of users stream videos, YouTube caches popular content at edge servers. To keep cache memory efficient, old or rarely accessed videos must be evicted smartly.
-</div>
-
+#### 5. CDN Caching and Eviction  
+When millions of users stream videos, YouTube caches popular content at edge servers. To keep cache memory efficient, old or rarely accessed videos must be evicted smartly.  
 **Design Technique / Algorithm:** LRU Cache Policy  
 <a href="./05.html" class="button">More ▶️</a>
 
-#### 6. Storage-Aware Server Assignment
-<div class="justified">
-When uploading or storing videos, YouTube uses a hashing technique to assign each video to a specific storage server. This ensures load balance and minimal data shuffling during server changes.
-</div>
-
-**Design Technique / Algorithm:** Consistant Hashing  
+#### 6. Storage-Aware Server Assignment  
+When uploading or storing videos, YouTube uses a hashing technique to assign each video to a specific storage server. This ensures load balance and minimal data shuffling during server changes.  
+**Design Technique / Algorithm:** Consistent Hashing  
 <a href="./06.html" class="button">More ▶️</a>
 
-#### 7. Load Balancing
-<div class="justified">
-To serve billions of video requests daily, YouTube needs to evenly distribute traffic across its servers, ensuring that no server gets overloaded, especially during viral spikes.
-</div>
+---
 
+### II. Performance Optimization
+
+#### 7. Load Balancing  
+To serve billions of video requests daily, YouTube needs to evenly distribute traffic across its servers, ensuring that no server gets overloaded, especially during viral spikes.  
 **Design Technique / Algorithm:** Round Robin  
 <a href="./07.html" class="button">More ▶️</a>
 
 #### 8. Adaptive Bitrate Optimization  
-<div class="justified">
-To ensure smooth playback even under fluctuating internet speeds, YouTube adjusts video quality dynamically by selecting the optimal bitrate version of each video chunk.
-</div>
-
+To ensure smooth playback even under fluctuating internet speeds, YouTube adjusts video quality dynamically by selecting the optimal bitrate version of each video chunk.  
 **Design Technique / Algorithm:** Dynamic Programming (Knapsack)  
 <a href="./08.html" class="button">More ▶️</a>
 
 #### 9. Peak Trending Window  
-<div class="justified">
-To detect peak periods of a video’s popularity, YouTube analyzes the time window during which the video gains the most views.
-</div>
-
+To detect peak periods of a video’s popularity, YouTube analyzes the time window during which the video gains the most views.  
 **Design Technique / Algorithm:** Kadane’s Algorithm  
 <a href="./09.html" class="button">More ▶️</a>
 
 #### 10. Video Recommendations  
-<div class="justified">
-YouTube recommends videos based on a user’s watch history and similarities with others. Collaborative filtering identifies content that users with similar tastes liked.
-</div>
-
+YouTube recommends videos based on a user’s watch history and similarities with others. Collaborative filtering identifies content that users with similar tastes liked.  
 **Design Technique / Algorithm:** Collaborative Filter  
 <a href="./10.html" class="button">More ▶️</a>
 
 #### 11. Ad Placement Scheduling  
-<div class="justified">
-YouTube must allocate ads across videos and users in a way that satisfies advertiser constraints and maximizes revenue, while ensuring non-intrusive user experience.
-</div>
-
+YouTube must allocate ads across videos and users in a way that satisfies advertiser constraints and maximizes revenue, while ensuring non-intrusive user experience.  
 **Design Technique / Algorithm:** Ford-Fulkerson Algorithm  
 <a href="./11.html" class="button">More ▶️</a>
 
 #### 12. Playlist Permutations (Shuffle)  
-<div class="justified">
-To offer fair and non-repetitive shuffle in playlists, YouTube uses a permutation algorithm that cycles through all song/video orders exactly once.
-</div>
-
+To offer fair and non-repetitive shuffle in playlists, YouTube uses a permutation algorithm that cycles through all song/video orders exactly once.  
 **Design Technique / Algorithm:** Johnson–Trotter Algorithm  
 <a href="./12.html" class="button">More ▶️</a>
 
-#### 13. Autocomplete Search Query  
-<div class="justified">
-When a user starts typing a search query, YouTube must suggest possible completions in real-time based on prefix matching from billions of past queries.
-</div>
+---
 
+### III. Recommendations & Search
+
+#### 13. Autocomplete Search Query  
+When a user starts typing a search query, YouTube must suggest possible completions in real time based on prefix matching from billions of past queries.  
 **Design Technique / Algorithm:** Trie  
 <a href="./13.html" class="button">More ▶️</a>
 
 #### 14. Copyright Detection  
-<div class="justified">
-YouTube scans uploaded videos to detect matches with copyrighted content using fingerprinting techniques, even if the video is slightly modified.
-</div>
-
+YouTube scans uploaded videos to detect matches with copyrighted content using fingerprinting techniques, even if the video is slightly modified.  
 **Design Technique / Algorithm:** Rabin–Karp / Rolling Hash  
 <a href="./14.html" class="button">More ▶️</a>
 
 #### 15. Spam Comment Filter  
-<div class="justified">
-To protect creators and users from spam, YouTube uses a fast and memory-efficient algorithm to check incoming comments against a blacklist of banned phrases.
-</div>
-
+To protect creators and users from spam, YouTube uses a fast and memory-efficient algorithm to check incoming comments against a blacklist of banned phrases.  
 **Design Technique / Algorithm:** Bloom Filter  
 <a href="./15.html" class="button">More ▶️</a>
 
 #### 16. Trending Video Detection  
-<div class="justified">
-YouTube identifies rapidly rising videos by monitoring view counts over recent sliding windows of time, helping curate the “Trending” section.
-</div>
-
+YouTube identifies rapidly rising videos by monitoring view counts over recent sliding windows of time, helping curate the “Trending” section.  
 **Design Technique / Algorithm:** Sliding Window  
 <a href="./16.html" class="button">More ▶️</a>
 
 #### 17. Channel Collaboration Clustering  
-<div class="justified">
-YouTube identifies communities of creators by analyzing collaborations (e.g., guest appearances), grouping them based on shared video content and audience overlap.
-</div>
-
+YouTube identifies communities of creators by analyzing collaborations (e.g., guest appearances), grouping them based on shared video content and audience overlap.  
 **Design Technique / Algorithm:** Union-Find  
 <a href="./17.html" class="button">More ▶️</a>
 
 #### 18. Common Category Detection  
-<div class="justified">
-When grouping multiple videos or channels, YouTube finds their closest common genre or tag from a hierarchical category tree.
-</div>
-
+When grouping multiple videos or channels, YouTube finds their closest common genre or tag from a hierarchical category tree.  
 **Design Technique / Algorithm:** Binary Lifting for LCA  
 <a href="./18.html" class="button">More ▶️</a>
 
-#### 19. Trending Query Windows  
-<div class="justified">
-YouTube analyzes bursts of user search terms to detect which queries are spiking in popularity within specific time ranges, helping detect viral trends.
-</div>
+---
 
-**Design Technique / Algorithm:** Mo's Algorithm  
+### IV. Analytics & Monetization
+
+#### 19. Trending Query Windows  
+YouTube analyzes bursts of user search terms to detect which queries are spiking in popularity within specific time ranges, helping detect viral trends.  
+**Design Technique / Algorithm:** Mo’s Algorithm  
 <a href="./19.html" class="button">More ▶️</a>
 
 #### 20. Real-Time Metrics Aggregation  
-<div class="justified">
-YouTube continuously tracks metrics like likes, views, and comments across millions of videos, allowing fast updates and queries in real-time.
-</div>
-
+YouTube continuously tracks metrics like likes, views, and comments across millions of videos, allowing fast updates and queries in real time.  
 **Design Technique / Algorithm:** Fenwick Tree  
 <a href="./20.html" class="button">More ▶️</a>
 
 #### 21. Search Spell Correction  
-<div class="justified">
-When users mistype queries, YouTube corrects spelling and suggests the closest possible valid query using dictionary prefix matching.
-</div>
-
+When users mistype queries, YouTube corrects spelling and suggests the closest possible valid query using dictionary prefix matching.  
 **Design Technique / Algorithm:** Trie + Edit Distance  
 <a href="./21.html" class="button">More ▶️</a>
 
 #### 22. Real-Time Ad Auction  
-<div class="justified">
-When an ad slot becomes available (e.g., before a video), YouTube must instantly select the winning ad from competing advertisers. Each advertiser places a bid based on targeting criteria, budget, and expected engagement.
-</div>
-
-**Design Technique / Algorithm:** Vickrey (second-price) auction + MVC arhitecture  
+When an ad slot becomes available (e.g., before a video), YouTube must instantly select the winning ad from competing advertisers. Each advertiser places a bid based on targeting criteria, budget, and expected engagement.  
+**Design Technique / Algorithm:** Vickrey (second-price) auction + MVC architecture  
 <a href="./22.html" class="button">More ▶️</a>
 
 #### 23. Video Recommendation Ranking  
-<div class="justified">
-To prioritize which videos appear higher in the recommendation feed, YouTube models the video network as a graph where videos are nodes and edges represent user transitions. Using PageRank, the system ranks videos by importance based on how often users jump between them.
-</div>
-
+To prioritize which videos appear higher in the recommendation feed, YouTube models the video network as a graph where videos are nodes and edges represent user transitions. Using PageRank, the system ranks videos by importance based on how often users jump between them.  
 **Design Technique / Algorithm:** PageRank  
 <a href="./23.html" class="button">More ▶️</a>
 
 #### 24. Scheduling Video Ads  
-<div class="justified">
-To determine the optimal sequence and timing for inserting ads into long-form videos (e.g., shows, livestreams), YouTube uses dynamic programming to maximize ad revenue while minimizing viewer disruption.
-</div>
-
+To determine the optimal sequence and timing for inserting ads into long-form videos (e.g., shows, livestreams), YouTube uses dynamic programming to maximize ad revenue while minimizing viewer disruption.  
 **Design Technique / Algorithm:** Dynamic Programming  
 <a href="./24.html" class="button">More ▶️</a>
+
+</div>
+
 
 
 ---
