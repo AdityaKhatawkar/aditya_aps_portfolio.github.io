@@ -135,7 +135,6 @@ YouTube’s backend must handle uploading, transcoding, storage, and streaming t
 When serving a video stream, YouTube must select the nearest CDN edge server or region to minimize latency. Given a user’s geographic location, we want the closest server.
 
 **Design Technique / Algorithm:** KD-Tree Nearest-Neighbor Search
-
 <a href="./01.html" class="button">More ▶️</a>
 
 #### 2. Shortest-Path Routing in CDN Network
