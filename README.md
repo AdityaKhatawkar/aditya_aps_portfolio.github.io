@@ -36,7 +36,12 @@ I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science a
 ## Introduction
 ![Google Logo](/assets/images/youtube_logo.png)
 
-<div class="justified">
+<a name="introduction"></a>
+## Introduction
+
+![Google Logo](/assets/images/youtube_logo.png)
+
+<div style="text-align: justify;">
 
 Founded in 2005 and acquired by Google in 2006, YouTube has evolved from a simple video-sharing site into a massive, data-driven platform that powers content discovery, creator monetization, and user engagement at a global scale. With over 2.7 billion monthly active users and more than 500 hours of video uploaded every minute, YouTube operates at an unmatched scale, requiring advanced algorithmic intelligence to manage and optimize operations [1].
 
@@ -47,6 +52,7 @@ What makes YouTube unique is not just its scale, but the way it handles business
 This portfolio explores YouTube’s real-world business cases and demonstrates how core DSA techniques can be applied to model and solve them efficiently.
 
 </div>
+
 
 
 ### 🏗️ YouTube System Architecture Overview
