@@ -140,38 +140,38 @@ When serving a video stream, YouTube must select the nearest CDN edge server or 
 #### 2. Shortest-Path Routing in CDN Network
 Once YouTube selects a CDN edge region to serve the user, the system must determine how to route the request through the network to that destination with minimal latency.
 
-**Design Technique / Algorithm:** A* Graph Search 
+**Design Technique / Algorithm:** A* Graph Search<br>
 <a href="./02.html" class="button">More ▶️</a>
 
 #### 3. Optimal Video Upload Scheduling
 
 When a creator uploads a large video, it is split into smaller chunks and sent to multiple regional upload servers (nearby CDNs) to reduce latency.
 
-**Design Technique / Algorithm:** Dynamic Programming 
+**Design Technique / Algorithm:** Dynamic Programming <br>
 <a href="./03.html" class="button">More ▶️</a>
 
 #### 4. Content Delivery Network (CDN) Optimization
 To ensure YouTube’s video content reaches users quickly and reliably, Google must optimize the underlying physical network that connects data centers, edge servers, and backbone links.
 
-**Design Technique / Algorithm:** Borůvka’s Algorithm for Minimum Spanning Tree (MST) 
+**Design Technique / Algorithm:** Borůvka’s Algorithm for Minimum Spanning Tree (MST) <br>
 <a href="./04.html" class="button">More ▶️</a>
 
 #### 5. CDN Caching and Eviction
 When millions of users stream videos, YouTube caches popular content at edge servers. To keep cache memory efficient, old or rarely accessed videos must be evicted smartly.
 
-**Design Technique / Algorithm:** LRU Cache Policy 
+**Design Technique / Algorithm:** LRU Cache Policy <br>
 <a href="./05.html" class="button">More ▶️</a>
 
 #### 6.  Storage-Aware Server Assignment
 When uploading or storing videos, YouTube uses a hashing technique to assign each video to a specific storage server. This ensures load balance and minimal data shuffling during server changes.
 
-**Design Technique / Algorithm:** Consistant Hashing 
+**Design Technique / Algorithm:** Consistant Hashing <br>
 <a href="./06.html" class="button">More ▶️</a>
 
 #### 7. Load Balancing
 To serve billions of video requests daily, YouTube needs to evenly distribute traffic across its servers, ensuring that no server gets overloaded, especially during viral spikes.
 
-**Design Technique / Algorithm:** Round Robin 
+**Design Technique / Algorithm:** Round Robin <br>
 <a href="./07.html" class="button">More ▶️</a>
 
 #### 8. Adaptive Bitrate Optimization  
