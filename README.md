@@ -36,22 +36,24 @@ I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science a
 ## Introduction
 ![Google Logo](/assets/images/youtube_logo.png)
 
-<a name="introduction"></a>
-## Introduction
+<div class="justified">
+  <p>
+    Founded in 2005 and acquired by Google in 2006, YouTube has evolved from a simple video-sharing site into a massive, data-driven platform that powers content discovery, creator monetization, and user engagement at a global scale. With over <strong>2.7 billion monthly active users</strong> and more than <strong>500 hours of video uploaded every minute</strong>, YouTube operates at an unmatched scale, requiring advanced algorithmic intelligence to manage and optimize operations <a href="#ref1">[1]</a>.
+  </p>
 
-![Google Logo](/assets/images/youtube_logo.png)
+  <p>
+    In recent years, YouTube has witnessed a massive boom in short-form content with the launch of <strong>YouTube Shorts</strong>, a feature introduced to compete with TikTok and Instagram Reels. By 2024, YouTube Shorts had surpassed <strong>70 billion daily views</strong> globally <a href="#ref2">[2]</a>. Forrester Research reports that <strong>29% of U.S. Gen Z</strong> online adults now use YouTube Shorts at least weekly, underscoring how bite-sized video is reshaping attention spans and engagement patterns <a href="#ref3">[3]</a>.
+  </p>
 
-<div style="text-align: justify;">
+  <p>
+    What makes YouTube unique is not just its scale, but the way it handles business-critical challenges such as content recommendation, ad targeting, trend detection, and moderation. Its backend is deeply rooted in a backbone of <strong>data structures and algorithms (DSA)</strong>. Whether it's ranking the best video for a user, optimizing live video delivery, or filtering spam, YouTube’s success lies in its algorithmic problem-solving capabilities.
+  </p>
 
-Founded in 2005 and acquired by Google in 2006, YouTube has evolved from a simple video-sharing site into a massive, data-driven platform that powers content discovery, creator monetization, and user engagement at a global scale. With over 2.7 billion monthly active users and more than 500 hours of video uploaded every minute, YouTube operates at an unmatched scale, requiring advanced algorithmic intelligence to manage and optimize operations [1].
-
-In recent years, YouTube has witnessed a massive boom in short-form content with the launch of YouTube Shorts, a feature introduced to compete with TikTok and Instagram Reels. By 2024, YouTube Shorts had surpassed 70 billion daily views globally [2]. Forrester Research reports that 29% of U.S. Gen Z online adults now use YouTube Shorts at least weekly — underscoring how bite-sized video is reshaping attention spans and engagement patterns [3].
-
-What makes YouTube unique is not just its scale, but the way it handles business-critical challenges such as content recommendation, ad targeting, trend detection, and moderation. These are deeply rooted in a backbone of data structures and algorithms (DSA). Whether it's ranking the best video for a user, optimizing live video delivery, or filtering spam — YouTube’s success is a triumph in algorithmic problem-solving.
-
-This portfolio explores YouTube’s real-world business cases and demonstrates how core DSA techniques can be applied to model and solve them efficiently.
-
+  <p>
+    This portfolio explores YouTube’s real-world business cases and demonstrates how core DSA techniques can be applied to model and solve them efficiently.
+  </p>
 </div>
+
 
 
 
