@@ -18,7 +18,9 @@ permalink: /
 
 <a name="about"></a>
 ## 👨‍💻 About Me
-I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science and Engineering at KLE Technological University, Hubballi. Passionate about learning, exploring new things, and pushing my boundaries, I’m currently diving deep into **Backend Web Development** and **Data Structures & Algorithms (DSA)**, just trying to live by the quote:  
+<div class="justified">
+I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science and Engineering at KLE Technological University, Hubballi. Passionate about learning, exploring new things, and pushing my boundaries, I’m currently diving deep into **Backend Web Development** and **Data Structures & Algorithms (DSA)**, just trying to live by the quote:
+<div>
 *"Do what you love, and you'll find people who love what you do"* .
 
 
@@ -36,7 +38,7 @@ I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science a
 ## Introduction
 ![Google Logo](/assets/images/youtube_logo.png)
 
-<div style="text-align: justify;">
+<div class="justified">
 
 Founded in 2005 and acquired by Google in 2006, YouTube has evolved from a simple video-sharing site into a massive, data-driven platform that powers content discovery, creator monetization, and user engagement at a global scale. With over 2.7 billion monthly active users and more than 500 hours of video uploaded every minute, YouTube operates at an unmatched scale, requiring advanced algorithmic intelligence to manage and optimize operations [1].
 
