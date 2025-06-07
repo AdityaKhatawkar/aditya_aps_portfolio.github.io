@@ -261,7 +261,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 
 #### 23. Video Recommendation Ranking  
 <p class="justified">To prioritize which videos appear higher in the recommendation feed, YouTube models the video network as a graph where videos are nodes and edges represent user transitions. Using PageRank, the system ranks videos by importance based on how often users jump between them.</p>  
-**Design Technique / Algorithm:** PageRank 
+**Design Technique / Algorithm:** PageRank <br>
 <a href="./23.html" class="button">More ▶️</a>
 
 #### 24. Scheduling Video Ads  
