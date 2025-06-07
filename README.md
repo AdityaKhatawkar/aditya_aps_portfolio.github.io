@@ -144,7 +144,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 
 #### 2. Shortest-Path Routing in CDN Network  
 <p class="justified">Once YouTube selects a CDN edge region to serve the user, the system must determine how to route the request through the network to that destination with minimal latency.</p>  
-**Design Technique / Algorithm:** A* Graph Search 
+**Design Technique / Algorithm:** A* Graph Search <br>
 <a href="./02.html" class="button">More ▶️</a>
 
 #### 3. Optimal Video Upload Scheduling  
@@ -173,7 +173,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 
 #### 7. Load Balancing  
 <p class="justified">To serve billions of video requests daily, YouTube needs to evenly distribute traffic across its servers, ensuring that no server gets overloaded, especially during viral spikes.</p>  
-**Design Technique / Algorithm:** Round Robin
+**Design Technique / Algorithm:** Round Robin <br>
 <a href="./07.html" class="button">More ▶️</a>
 
 #### 8. Adaptive Bitrate Optimization  
@@ -193,7 +193,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 
 #### 11. Ad Placement Scheduling  
 <p class="justified">YouTube must allocate ads across videos and users in a way that satisfies advertiser constraints and maximizes revenue, while ensuring non-intrusive user experience.</p>  
-**Design Technique / Algorithm:** Ford-Fulkerson Algorithm 
+**Design Technique / Algorithm:** Ford-Fulkerson Algorithm <br>
 <a href="./11.html" class="button">More ▶️</a>
 
 #### 12. Playlist Permutations (Shuffle)  
@@ -217,11 +217,11 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 
 #### 15. Spam Comment Filter  
 <p class="justified">To protect creators and users from spam, YouTube uses a fast and memory-efficient algorithm to check incoming comments against a blacklist of banned phrases.</p>  
-**Design Technique / Algorithm:** Bloom Filter 
+**Design Technique / Algorithm:** Bloom Filter <br>
 <a href="./15.html" class="button">More ▶️</a>
 
 #### 16. Trending Video Detection  
-<p class="justified">YouTube identifies rapidly rising videos by monitoring view counts over recent sliding windows of time, helping curate the “Trending” section.</p>  
+<p class="justified">YouTube identifies rapidly rising videos by monitoring view counts over recent sliding windows of time, helping curate the “Trending” section.</p> 
 **Design Technique / Algorithm:** Sliding Window  
 <a href="./16.html" class="button">More ▶️</a>
 
@@ -241,12 +241,12 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 
 #### 19. Trending Query Windows  
 <p class="justified">YouTube analyzes bursts of user search terms to detect which queries are spiking in popularity within specific time ranges, helping detect viral trends.</p>  
-**Design Technique / Algorithm:** Mo’s Algorithm 
+**Design Technique / Algorithm:** Mo’s Algorithm <br>
 <a href="./19.html" class="button">More ▶️</a>
 
 #### 20. Real-Time Metrics Aggregation  
-<p class="justified">YouTube continuously tracks metrics like likes, views, and comments across millions of videos, allowing fast updates and queries in real time.</p>  
-**Design Technique / Algorithm:** Fenwick Tree 
+<p class="justified">YouTube continuously tracks metrics like likes, views, and comments across millions of videos, allowing fast updates and queries in real time.</p> 
+**Design Technique / Algorithm:** Fenwick Tree <br>
 <a href="./20.html" class="button">More ▶️</a>
 
 #### 21. Search Spell Correction  
@@ -256,7 +256,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 
 #### 22. Real-Time Ad Auction  
 <p class="justified">When an ad slot becomes available (e.g., before a video), YouTube must instantly select the winning ad from competing advertisers. Each advertiser places a bid based on targeting criteria, budget, and expected engagement.</p>  
-**Design Technique / Algorithm:** Vickrey (Second-Price) Auction + MVC Architecture  
+**Design Technique / Algorithm:** Vickrey (Second-Price) Auction + MVC Architecture <br>
 <a href="./22.html" class="button">More ▶️</a>
 
 #### 23. Video Recommendation Ranking  
@@ -266,7 +266,7 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 
 #### 24. Scheduling Video Ads  
 <p class="justified">To determine the optimal sequence and timing for inserting ads into long-form videos (e.g., shows, livestreams), YouTube uses dynamic programming to maximize ad revenue while minimizing viewer disruption.</p>  
-**Design Technique / Algorithm:** Dynamic Programming 
+**Design Technique / Algorithm:** Dynamic Programming <br>
 <a href="./24.html" class="button">More ▶️</a>
 
 
