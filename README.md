@@ -18,8 +18,15 @@ permalink: /
 
 <a name="about"></a>
 ## 👨‍💻 About Me
-I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science and Engineering at KLE Technological University, Hubballi. Passionate about learning, exploring new things, and pushing my boundaries, I’m currently diving deep into **Backend Web Development** and **Data Structures & Algorithms (DSA)**, just trying to live by the quote:
-*"Do what you love, and you'll find people who love what you do"* .
+<div class="justified">
+  <p>
+    I’m <strong>Aditya N. Khatawkar</strong>, currently pursuing a degree in Computer Science and Engineering at KLE Technological University, Hubballi. Passionate about learning, exploring new things, and pushing my boundaries, I’m currently diving deep into <strong>Backend Web Development</strong> and <strong>Data Structures & Algorithms (DSA)</strong>, just trying to live by the quote:
+  </p>
+
+  <p>
+    <em>"Do what you love, and you'll find people who love what you do."</em>
+  </p>
+</div>
 
 
 
@@ -42,11 +49,11 @@ I’m **Aditya N. Khatawkar**, currently pursuing a degree in Computer Science a
   </p>
 
   <p>
-    In recent years, YouTube has witnessed a massive boom in short-form content with the launch of <strong>YouTube Shorts</strong>, a feature introduced to compete with TikTok and Instagram Reels. By 2024, YouTube Shorts had surpassed <strong>70 billion daily views</strong> globally <a href="#ref2">[2]</a>. Forrester Research reports that <strong>29% of U.S. Gen Z</strong> online adults now use YouTube Shorts at least weekly, underscoring how bite-sized video is reshaping attention spans and engagement patterns <a href="#ref3">[3]</a>.
+    In recent years, YouTube has witnessed a massive boom in short-form content with the launch of YouTube Shorts, a feature introduced to compete with TikTok and Instagram Reels. By 2024, YouTube Shorts had surpassed <strong>70 billion daily views</strong> globally <a href="#ref2">[2]</a>. Forrester Research reports that <strong>29% of U.S. Gen Z</strong> online adults now use YouTube Shorts at least weekly, underscoring how bite-sized video is reshaping attention spans and engagement patterns <a href="#ref3">[3]</a>.
   </p>
 
   <p>
-    What makes YouTube unique is not just its scale, but the way it handles business-critical challenges such as content recommendation, ad targeting, trend detection, and moderation. Its backend is deeply rooted in a backbone of <strong>data structures and algorithms (DSA)</strong>. Whether it's ranking the best video for a user, optimizing live video delivery, or filtering spam, YouTube’s success lies in its algorithmic problem-solving capabilities.
+    What makes YouTube unique is not just its scale, but the way it handles business-critical challenges such as content recommendation, ad targeting, trend detection, and moderation. Its backend is deeply rooted in a backbone of data structures and algorithms (DSA). Whether it's ranking the best video for a user, optimizing live video delivery, or filtering spam, YouTube’s success lies in its algorithmic problem-solving capabilities.
   </p>
 
   <p>
@@ -73,32 +80,51 @@ Below is a concise overview of how YouTube’s core systems handle video from up
 
 *Figure 1: High-level YouTube system design illustrating user upload servers, transcoding clusters, video storage, CDNs, metadata services, and recommendation pipelines.* [4]
 
-1. **User Client → Upload Servers**  
-   - **Creators** upload raw video files via web or mobile clients.  
-   - Requests pass through a **load balancer** to an **Upload/Web Server**, which writes the file into durable blob storage.
+<div class="justified">
+  <ol>
+    <li>
+      <strong>User Client → Upload Servers</strong><br />
+      <ul>
+        <li><strong>Creators</strong> upload raw video files via web or mobile clients.</li>
+        <li>Requests pass through a <strong>load balancer</strong> to an <strong>Upload/Web Server</strong>, which writes the file into durable blob storage.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Transcoding & Storage</strong><br />
+      <ul>
+        <li>A fleet of <strong>Transcoding Servers</strong> retrieves uploads and encodes them into multiple resolutions (144p, 480p, 1080p, etc.).</li>
+        <li>Transcoded segments are stored in a distributed <strong>Video Storage</strong> layer; metadata (titles, IDs, thumbnails) is indexed in a <strong>Metadata Store</strong> (e.g., Bigtable, Spanner).</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Content Delivery Network (CDN)</strong><br />
+      <ul>
+        <li>Popular and newly uploaded content is replicated to edge <strong>CDN</strong> nodes worldwide.</li>
+        <li>Viewers fetch video chunks from the nearest CDN via adaptive-bitrate protocols (MPEG-DASH, HLS) to minimize latency.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Viewer Playback Path</strong><br />
+      <ul>
+        <li>A <strong>Viewer</strong> requests a video; the client contacts the closest CDN edge.</li>
+        <li>Cache misses trigger a fetch from the origin storage.</li>
+        <li><strong>Adaptive streaming algorithms</strong> and <strong>real-time analytics</strong> determine the optimal segment quality.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Metadata & Recommendations</strong><br />
+      <ul>
+        <li>The client’s API calls hit the <strong>API Server</strong>, which queries the <strong>Metadata Store</strong> for user history and video stats.</li>
+        <li><strong>Recommendation engines</strong> (graph-based, collaborative filtering) generate personalized “Up Next” and homepage feeds.</li>
+      </ul>
+    </li>
+  </ol>
 
-2. **Transcoding & Storage**  
-   - A fleet of **Transcoding Servers** retrieves uploads and encodes them into multiple resolutions (144p, 480p, 1080p, etc.).  
-   - Transcoded segments are stored in a distributed **Video Storage** layer; metadata (titles, IDs, thumbnails) is indexed in a **Metadata Store** (e.g., Bigtable, Spanner).
+  <p>
+    This end-to-end pipeline built on load balancers, distributed storage, transcoding clusters, CDNs, and recommendation services forms the foundation for all the business-critical scenarios in this portfolio. In the sections that follow, we’ll dive into specific cases and show how Data Structures & Algorithms (DSA) techniques solve them efficiently.
+  </p>
+</div>
 
-3. **Content Delivery Network (CDN)**  
-   - Popular and newly uploaded content is replicated to edge **CDN** nodes worldwide.  
-   - Viewers fetch video chunks from the nearest CDN via adaptive-bitrate protocols (MPEG-DASH, HLS) to minimize latency.
-
-4. **Viewer Playback Path**  
-   - A **Viewer** requests a video; the client contacts the closest CDN edge.  
-   - Cache misses trigger a fetch from the origin storage.  
-   - **Adaptive streaming algorithms** and **real-time analytics** determine the optimal segment quality.
-
-5. **Metadata & Recommendations**  
-   - Meanwhile, the client’s API calls hit the **API Server**, which queries the **Metadata Store** for user history and video stats.  
-   - **Recommendation engines** (graph-based, collaborative filtering) generate personalized “Up Next” and homepage feeds.
-
----
-
-This end-to-end pipeline built on load balancers, distributed storage, transcoding clusters, CDNs, and recommendation services forms the foundation for all the business-critical scenarios in this portfolio. In the sections that follow, we’ll dive into specific cases and show how Data Structures & Algorithms (DSA) techniques solve them efficiently.
-
----
 
 <a name="cases"></a>
 ## 💼 Business Cases
