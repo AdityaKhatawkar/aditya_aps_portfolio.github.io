@@ -1,12 +1,9 @@
 main:
   - title: "Home"
     url: "/"
-  - title: "Student & Course Details"
-    url: "#details"
   - title: "About Me"
     url: "#about"
   - title: "Introduction"
     url: "#introduction"
   - title: "Business Cases"
     url: "#cases"
-
