@@ -125,14 +125,16 @@ Below is a concise overview of how YouTube’s core systems handle video from up
   </p>
 </div>
 
-
 <a name="cases"></a>
 ## 💼 Business Cases
+### I. Content Delivery and Infrastructure
 
-### 1. YouTube Video Comments Management
+YouTube’s backend must handle uploading, transcoding, storage, and streaming to millions of devices. The key is fast retrieval and minimal latency. Services are replicated across regions, and popular content is pushed to edge servers (CDNs) [5]. Efficient algorithms are used for routing, load balancing, and data placement.
 
-Managing the vast number of comments on YouTube videos requires intelligent systems to filter spam, detect toxicity, and highlight meaningful interactions. This business case explores how backend systems and algorithms can improve user engagement and maintain community standards.  
-[**More▶️**](./01.md)
+#### 1. Content Delivery Network (CDN) Server Selection
+When serving a video stream, YouTube must select the nearest CDN edge server or region to minimize latency. Given a user’s geographic location, we want the closest server.
+
+<a href="./01.html" class="button">More ▶️</a>
 
 ### 2. YouTube Copyright Infringement Detection
 
@@ -161,5 +163,6 @@ Google Cloud dynamically allocates resources based on cost and performance const
 4. GeeksforGeeks. *System Design of Youtube - A Complete Architecture*.
    Available at: [https://www.geeksforgeeks.org/system-design-of-youtube-a-complete-architecture/](https://www.geeksforgeeks.org/system-design-of-youtube-a-complete-architecture/)
 
-
+5. Dev.to. *System Design of YouTube: A Detailed Deep Dive into the Video Giant*
+   Available at: [https://dev.to/wittedtech-by-harshit/system-design-of-youtube-a-detailed-deep-dive-into-the-video-giant-5019](https://dev.to/wittedtech-by-harshit/system-design-of-youtube-a-detailed-deep-dive-into-the-video-giant-5019)
 
