@@ -74,7 +74,11 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 ><em>“How does the video recommendation work?”</em><br>
 ><em>“How is content violating DMCA detected?”</em><br>
 
-Below is a concise overview of how YouTube’s core systems handle video from upload through delivery. This high-level architecture lays the groundwork for the business cases we’ll explore next.
+<div class="justified">
+  <p>
+    Below is a concise overview of how YouTube’s core systems handle video from upload through delivery. This high-level architecture lays the groundwork for the business cases we’ll explore next.
+  </p>
+</div>
 
 ![YouTube System Design Architecture](/assets/images/youtube_system_design.png)
 
