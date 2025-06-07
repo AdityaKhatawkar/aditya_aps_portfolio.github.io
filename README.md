@@ -132,8 +132,6 @@ Having spent hours surfing YouTube every day, I’ve often found myself wonderin
 </div>
 
 <a name="cases"></a>
-<div style="text-align: justify;">
-
 ## 💼 Business Cases
 
 ### I. Content Delivery and Infrastructure
@@ -269,9 +267,6 @@ To prioritize which videos appear higher in the recommendation feed, YouTube mod
 To determine the optimal sequence and timing for inserting ads into long-form videos (e.g., shows, livestreams), YouTube uses dynamic programming to maximize ad revenue while minimizing viewer disruption.  
 **Design Technique / Algorithm:** Dynamic Programming  
 <a href="./24.html" class="button">More ▶️</a>
-
-</div>
-
 
 
 ---
