@@ -98,7 +98,7 @@ Managing the vast number of comments on YouTube videos requires intelligent syst
 ### 2. YouTube Copyright Infringement Detection
 
 With millions of videos uploaded daily, YouTube faces the challenge of identifying copyrighted content in real time. This business case focuses on how data structures, pattern matching, and scalable backend systems can help detect and handle copyright violations efficiently.  
-<a href="/cases/copyright-infringement/" class="button">More ▶️</a>
+<a href="./01.md" class="button">More ▶️</a>
 
 ### 3. Cost-Optimized Resource Allocation
 
